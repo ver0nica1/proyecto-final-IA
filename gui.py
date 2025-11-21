@@ -206,7 +206,7 @@ class InterfazPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Simulated Annealing CVRP - Dosquebradas")
-        self.resize(1400, 800)
+        self.resize(1400, 700)
 
         self.puntos, self.punto_inicio_id = cargar_144_puntos_completos()
         self.algoritmo = None
@@ -327,7 +327,7 @@ class InterfazPrincipal(QMainWindow):
 
         self.spin_vehiculos = QSpinBox()
         self.spin_vehiculos.setRange(1, 20)
-        self.spin_vehiculos.setValue(13)
+        self.spin_vehiculos.setValue(14)
 
         form.addRow("Iteraciones Máximas:", self.spin_iter_max)
         form.addRow("Temperatura Inicial:", self.spin_temp_ini)
